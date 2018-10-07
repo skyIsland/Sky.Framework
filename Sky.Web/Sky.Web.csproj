@@ -99,21 +99,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Common\AreaRegistrationBase.cs" />
+    <Compile Include="Common\ControllerBaseX.cs" />
     <Compile Include="Common\ControllerHelper.cs" />
     <Compile Include="Common\EntityAuthorizeAttribute.cs" />
+    <Compile Include="Common\EntityController.cs" />
     <Compile Include="Common\EntityModelBinder.cs" />
+    <Compile Include="Common\FieldCollection.cs" />
     <Compile Include="Common\MvcHandleErrorAttribute.cs" />
     <Compile Include="Common\NoPermissionException.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\JsonTips.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -123,7 +133,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Manager\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sky.BLL\Sky.BLL.csproj">

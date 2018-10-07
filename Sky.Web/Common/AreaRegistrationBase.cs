@@ -66,7 +66,7 @@ namespace Sky.Web
             context.MapRoute(
                 AreaName,
                 AreaName + "/{controller}/{action}/{id}",
-                new { controller = "Index", action = "Index", id = UrlParameter.Optional },
+                new { controller = "Manager", action = "Index", id = UrlParameter.Optional },
                 new[] { ns }
             );
 
