@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sky.Web.Models
+namespace Sky.Models
 {
     /// <summary>
     /// JSON 返回
@@ -13,7 +13,7 @@ namespace Sky.Web.Models
         /// <summary>
         ///  操作结果代码
         /// </summary>
-        public string StatusCode { get; set; } = "200";
+        public bool Result { get; set; } = false;
         /// <summary>
         /// 返回信息
         /// </summary>

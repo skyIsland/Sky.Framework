@@ -47,6 +47,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\JsonTips.cs" />
+    <Compile Include="Entity\账单.Biz.cs" />
+    <Compile Include="Entity\账单.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +65,8 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Build.log</LastGenOutput>
     </Content>
-    <Content Include="SkyModel.xml" />
-    <Content Include="Model.xml" />
+    <Content Include="Membership.xml" />
+    <Content Include="SkyModels.xml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

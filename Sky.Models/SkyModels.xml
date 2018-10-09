@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tables Version="9.9.6806.43122" NameSpace="Sky.Models" ConnName="Conn" Output="Entity" BaseClass="Entity">
+  <Table Name="Bill" Description="账单" DbType="SqlServer" RenderGenEntity="true">
+    <Columns>
+      <Column Name="Id" DataType="Int32" Identity="True" PrimaryKey="True" Description="内部编号" />
+      <Column Name="UserId" DataType="Int32" Master="True" Description="关联用户Id" />
+      <Column Name="HappendTime" DataType="DateTime" Description="发生时间" />
+      <Column Name="ChangeMoney" DataType="Decimal" Description="变动金额" />
+      <Column Name="IsDeleted" DataType="Int32" Description="是否删除" />
+      <Column Name="AddTime" DataType="DateTime" Description="添加时间" />
+      <Column Name="AddIp" DataType="String" Description="添加Ip" />
+      <Column Name="AddUser" DataType="Int32" Description="添加人" />
+    </Columns>
+  </Table>
+</Tables>

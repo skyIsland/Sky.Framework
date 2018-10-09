@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.Mvc;
 using Sky.Models;
 
-namespace Sky.Web
+namespace Sky.AppWebApi
 {
     /// <summary>拦截错误的特性</summary>
     public class MvcHandleErrorAttribute : HandleErrorAttribute
